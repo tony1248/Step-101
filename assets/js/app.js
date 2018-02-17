@@ -27,9 +27,9 @@ function init() {
         method: 'GET',
         url: 'assets/data/menu.json',
         dataType: 'json',
-        success: function(data) {
+        success: function (data) {
             console.log('all good');
-            console.log('data.menu.length');
+            console.log(data.menu.length);
 
             if (data.menu.length > 0) {
                   data.menu.forEach(function(item) {
